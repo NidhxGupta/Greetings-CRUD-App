@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<h1>All Greetings Details</h1>
+<body>
+	<table border="1" cellpadding="10">
+		<tr>
+			<th>Name</th>
+			<th>Greeting</th>
+		</tr>
+		<tr th:each="b : ${allgreeting}">
+			<td th:text="${b.name}"></td>
+			<td th:text="${b.greetingcontent}"></td>
+		</tr>
+	</table>
+	<a href="addgreeting">Add Greeting</a>
+	<a href="editgreeting">Edit Greeting</a>
+	<a href="deletegreeting">Delete Greeting</a>
+</body>

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<body>
+	<h1>Form</h1>
+    <form action="#" th:action="@{/editgreeting}" th:object="${greeting}" method="post">
+        OLD Greetings
+    	<p>Name: <input type="text" th:field="*{name}" /></p>
+        <p>Greeting: <input type="text" th:field="*{greetingcontent}" /></p>
+
+        New Greetings
+
+    	<p>Name: <input type="text" th:field="*{name2}" /></p>
+        <p>Greeting: <input type="text" th:field="*{greetingcontent2}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
