@@ -12,7 +12,7 @@
 	<artifactId>greetings</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>music</name>
-	<description>student managaement system using thymeleaf and spring boot</description>
+	<description>greetings managaement system using thymeleaf, spring boot and mongodb</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
